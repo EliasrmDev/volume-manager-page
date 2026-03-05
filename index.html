@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Manager - Chrome Extension</title>
+    <meta name="description" content="Take control of your browser audio with Volume Manager. Adjust volume for individual tabs, use keyboard shortcuts, and manage all your audio sources in one place.">
+    <link rel="stylesheet" href="promo-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🔊</span>
+                <span class="logo-text">Volume Manager</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#install">Install</a>
+                <a href="#support">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Take Control of Your<br><span class="highlight">Browser Audio</span></h1>
+                <p class="hero-description">
+                    Volume Manager gives you precise control over the audio in your Chrome tabs.
+                    Adjust volume levels individually, mute specific tabs, and use convenient keyboard shortcuts - all from one simple interface.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#install" class="btn btn-primary">
+                        <span class="btn-icon">⬇️</span>
+                        Install Extension
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <span class="btn-icon">✨</span>
+                        View Features
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="extension-preview">
+                    <div class="extension-window">
+                        <div class="extension-header">
+                            <h3>Set volume</h3>
+                        </div>
+                        <div class="extension-content">
+                            <div class="audio-indicator-demo">
+                                <div class="indicator-header-demo">
+                                    <span class="indicator-title-demo">Tabs with audio</span>
+                                </div>
+                                <div class="tab-item-demo current">
+                                    <div class="tab-info-demo">
+                                        <div class="tab-title-demo">YouTube Music</div>
+                                        <div class="tab-url-demo">music.youtube.com</div>
+                                    </div>
+                                    <div class="audio-icon-demo">🔊</div>
+                                </div>
+                                <div class="tab-item-demo">
+                                    <div class="tab-info-demo">
+                                        <div class="tab-title-demo">Spotify Web Player</div>
+                                        <div class="tab-url-demo">open.spotify.com</div>
+                                    </div>
+                                    <div class="audio-icon-demo">🔊</div>
+                                </div>
+                            </div>
+                            <div class="volume-control-demo">
+                                <label>Volume Control</label>
+                                <div class="volume-percentage">75%</div>
+                                <div class="range-demo"><div class="range-fill"></div></div>
+                                <button class="mute-btn-demo">
+                                    <span>🔊</span>
+                                    <span>Mute</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need to manage your browser audio efficiently</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎚️</div>
+                    <h3>Individual Tab Control</h3>
+                    <p>Adjust the volume of each tab independently. Perfect for managing multiple audio sources simultaneously.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⌨️</div>
+                    <h3>Keyboard Shortcuts</h3>
+                    <p>Use convenient keyboard shortcuts to control volume and mute status without interrupting your workflow.</p>
+                    <div class="shortcuts-preview">
+                        <div class="shortcut-item-preview">
+                            <span class="key">Ctrl + M</span>
+                            <span>Mute/Unmute</span>
+                        </div>
+                        <div class="shortcut-item-preview">
+                            <span class="key">Ctrl + Shift + ↑</span>
+                            <span>Volume Up</span>
+                        </div>
+                        <div class="shortcut-item-preview">
+                            <span class="key">Ctrl + Shift + ↓</span>
+                            <span>Volume Down</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👁️</div>
+                    <h3>Audio Tab Detection</h3>
+                    <p>Automatically detects and displays all tabs that are currently playing audio, so you never lose track.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Clean Interface</h3>
+                    <p>Modern, intuitive design that's easy to use and doesn't get in your way. Access everything from the extension popup.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightweight & Fast</h3>
+                    <p>Minimal resource usage with instant response times. No impact on your browsing performance.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>No data collection, no tracking, no external connections. Your browsing habits stay completely private.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Getting started is simple and takes less than a minute</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Install Extension</h3>
+                        <p>Add Volume Manager to Chrome from the Chrome Web Store with one click.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Open a Tab with Audio</h3>
+                        <p>Navigate to any website playing audio - YouTube, Spotify, podcasts, or any other media.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Control Your Audio</h3>
+                        <p>Click the Volume Manager icon or use keyboard shortcuts to adjust volume and mute settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="install" class="install">
+        <div class="container">
+            <div class="install-content">
+                <h2>Ready to Take Control?</h2>
+                <p>Install Volume Manager now and experience better audio management in your browser.</p>
+
+                <div class="install-options">
+                    <a href="https://chromewebstore.google.com/detail/fkgpjoogfnmafepopcenodgmidacoopc?utm_source=item-share-cb" class="btn btn-large btn-primary" target="_blank" rel="noopener">
+                        <span class="btn-icon">🚀</span>
+                        Add to Chrome - It's Free!
+                    </a>
+
+                    <div class="install-info">
+                        <div class="info-item">
+                            <span class="info-icon">✓</span>
+                            <span>No registration required</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">✓</span>
+                            <span>Works instantly after install</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">✓</span>
+                            <span>Regular updates & improvements</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="support" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Volume Manager</h3>
+                    <p>The ultimate Chrome extension for managing your browser audio with precision and ease.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#install">Install</a></li>
+                        <li><a href="mailto:web.dev.elias@gmail.com">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://github.com/EliasrmDev/volume-manager/issues" target="_blank" rel="noopener">Report Issue</a></li>
+                        <li><a href="https://github.com/EliasrmDev/volume-manager/issues" target="_blank" rel="noopener">Feature Request</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Developer</h4>
+                    <ul>
+                        <li><a href="https://github.com/EliasrmDev" target="_blank" rel="noopener">GitHub Profile</a></li>
+                        <li><a href="mailto:web.dev.elias@gmail.com" target="_blank" rel="noopener">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Volume Manager. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="promo-script.js"></script>
+</body>
+</html>
