@@ -16,6 +16,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Mute button functionality demo
+    const muteBtn = document.getElementById('mute-btn-demo');
+    const muteIcon = document.querySelector('.mute-icon');
+    const muteText = document.querySelector('.mute-text');
+    const volumePercentage = document.getElementById('volume-percentage-demo');
+    const rangeFill = document.getElementById('range-fill-demo');
+    let isMuted = false;
+    let previousVolume = '75%';
+
+    if (muteBtn) {
+        muteBtn.addEventListener('click', function() {
+            isMuted = !isMuted;
+
+            if (isMuted) {
+                // Muted state
+                muteIcon.textContent = '🔇';
+                muteText.textContent = 'Unmute';
+                previousVolume = volumePercentage.textContent;
+                volumePercentage.textContent = '0%';
+                rangeFill.style.width = '0%';
+                muteBtn.setAttribute('aria-label', 'Unmute audio');
+                muteBtn.classList.add('muted');
+            } else {
+                // Unmuted state
+                muteIcon.textContent = '🔊';
+                muteText.textContent = 'Mute';
+                volumePercentage.textContent = previousVolume;
+                rangeFill.style.width = previousVolume;
+                muteBtn.setAttribute('aria-label', 'Mute audio');
+                muteBtn.classList.remove('muted');
+            }
+        });
+    }
+
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
 
