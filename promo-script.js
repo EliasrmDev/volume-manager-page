@@ -1,5 +1,21 @@
 // Smooth scrolling for anchor links
 document.addEventListener('DOMContentLoaded', function() {
+    // Hide skip link after use for accessibility
+    const skipLink = document.querySelector('.skip-link');
+    if (skipLink) {
+        skipLink.addEventListener('click', function() {
+            // Add a small delay to ensure the focus has moved to the target
+            setTimeout(() => {
+                this.style.display = 'none';
+            }, 100);
+        });
+
+        // Show skip link again when tabbing (for keyboard users)
+        skipLink.addEventListener('focus', function() {
+            this.style.display = 'block';
+        });
+    }
+
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
 
